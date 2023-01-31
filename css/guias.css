@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*background: #6dd4c7;*/
+}
+
+.text-header{
+    background: #6dd4c7;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu-pos{
+    width: 20%;
+    height: 449px;
+    background: #6dd4c7;
+}
+
+.menu{
+    line-height: 65px;
+    padding: 0px 0px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 0px 100px;
+    text-decoration: none;
+    color: black;
+    transition: all 500ms ease;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.menu a:active:visited {
+    display: block;
+    background: #fc8a6f;
+ }
+
+.menu ul li a:hover + ul, .menu{
+    display: block;
+}
+
+section#etiqueta1, section#etiqueta2, section#etiqueta3, section#etiqueta4, section#etiqueta5{
+    width: 760px;
+    height: 350px;
+    /*background: #fff;*/
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 400px;
+}
+
+section#etiqueta1 h2, section#etiqueta2 h2, section#etiqueta3 h2, section#etiqueta4 h2, section#etiqueta5 h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    font-size: 40px;
+    color: #fc8a6f;
+}
+
+
+section#etiqueta1 p, section#etiqueta2 p, section#etiqueta3 p, section#etiqueta4 p, section#etiqueta5 p{
+    width: 400px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-top: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/guias.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <section class="text-header">
+        <h1>C S S</h1>
+    </section>
+
+    <div class="menu-pos">
+        <nav class="menu">
+            <ul>
+                <li><a href="#" onclick="mostrarinfo(1);">Width</a></li>
+                <li><a href="#" onclick="mostrarinfo(2);">Height</a></li>
+                <li><a href="#" onclick="mostrarinfo(3);">Padding</a></li>
+                <li><a href="#" onclick="mostrarinfo(4);">Margin</a></li>
+                <li><a href="#" onclick="mostrarinfo(5);">Border</a></li>
+                <li><a href="index.html"><img src="img/hogar1.png"></a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <section id="etiqueta1" style="display: none;">
+        <article>
+            <h2>* WIDTH *</h2>
+            <p>Define el ancho de un elemento.</p>
+            <p>El valor se puede escribir en pixels, rems o porcentaje. 
+                Las etiquetas de bloque tienen por defecto un width de 100%</p>
+        </article>
+    </section>
+    <section id="etiqueta2" style="display: none;">
+        <article>
+            <h2>* HEIGHT *</h2>
+            <p>Define el alto de un elemento.</p>
+            <p>El valor se puede escribir en pixels, rems o porcentaje. 
+                Esta propiedad hay que usarla con cuidado porque es preferible dejar las cajas con altura 
+                sin definir para que se estiren automáticamente cuando el contenido se modifique o se acomode a otros dispositivos.</p>
+        </article>
+    </section>
+    <section id="etiqueta3" style="display: none;">
+        <article>
+            <h2>* PADDING *</h2>
+            <p>Es la distancia desde el borde de un elemento hasta su contenido. </p>
+            <p>Esta propiedad es imprescindible si la caja tiene color de fondo o borde. 
+                Si no lo tiene, se vería igual usando margin para generar los espacios. Hay que tener en cuenta que el padding por defecto aumenta el tamaño
+                de una caja, para que esto no suceda, se usa box-sizing: border-box. Esta propiedad se suele definir en una regla con selector universal
+                para que todos los elementos del sitio se comporten igual.</p>
+        </article>
+    </section>
+    <section id="etiqueta4" style="display: none;">
+        <article>
+            <h2>* MARGIN *</h2>
+            <p>Es la distancia entre un elemento y otro</p>
+            <p>Desde el borde de un elemento hacia afuera. 
+                Muchas etiquetas HTML tienen margin por defecto por ejemplo: el body, los encabezados, los párrafos y las listas.</p>
+        </article>
+    </section>
+    <section id="etiqueta5" style="display: none;">
+        <article>
+            <h2>* BORDER *</h2>
+            <p>Define el borde de un elemento, su color, su estilo y grosor.</p>
+            <p>Con la etiqueta podemos personalizar el estilo de solamente una parte del texto.</p>
+        </article>
+    </section>
+
+</body>
+
+<script>
+    function mostrarinfo(id){
+        for(var i = 1; i <= 5; i++){
+            if(id == i){
+                document.getElementById("etiqueta"+id).style.display = "block";
+            }else{
+                document.getElementById("etiqueta"+i).style.display = "none";
+            }
+        }
+    }
+</script>
+
+</html>

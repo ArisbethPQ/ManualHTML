@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/guias.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+    <section class="text-header">
+        <h1>H T M L</h1>
+    </section>
+
+    <div class="menu-pos">
+        <nav class="menu">
+            <ul>
+                <li><a href="#" onclick="mostrarinfo(1);">div</a></li>
+                <li><a href="#" onclick="mostrarinfo(2);">br</a></li>
+                <li><a href="#" onclick="mostrarinfo(3);">h1/h6</a></li>
+                <li><a href="#" onclick="mostrarinfo(4);">ol/ul/li</a></li>
+                <li><a href="#" onclick="mostrarinfo(5);">span</a></li>
+                <li><a href="index.html"><img src="img/hogar1.png"></a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+        <section id="etiqueta1" style="display: none;">
+            <article>
+                <h2>* DIV *</h2>
+                <p>División dentro del contenido</p>
+                <p>Un elemento que es usado mayoritariamente para agrupar otros elementos y actuar como plantilla de otros controles. 
+                La etiqueta < div > nos ayuda a estructurar el documento en secciones.</p>
+            </article>
+        </section>
+        <section id="etiqueta2" style="display: none;">
+            <article>
+                <h2>* BR *</h2>
+                <p>Para saltos de línea</p>
+                <p>Con esta etiqueta HTML le podemos decir al navegador que viene un salto de línea. 
+                    Nos sirve para hacer el texto más leíble.</p>
+            </article>
+        </section>
+        <section id="etiqueta3" style="display: none;">
+            <article>
+                <h2>* H1 -  H6 *</h2>
+                <p>Para títulos dentro del contenido</p>
+                <p>Hy diferentes niveles de títulos, del 1 al 6. Las etiquetas < H + número > nos permiten indicar la importancia del título y 
+                para estructurar el contenido, de esta forma ayudamos a los bots a entender la importancia del contenido.</p>
+            </article>
+        </section>
+        <section id="etiqueta4" style="display: none;">
+            <article>
+                <h2>* OL/UL/LI *</h2>
+                <p>OL: Para listas ordenadas, UL: Para listas desordenadas, LI: Para elementos dentro de la lista</p>
+                <p>Las etiquetas OL y LI nos sirven para crear listas, OL para listas ordenadas y UL para listas sin orden. 
+                    Dentro de las listas, los elementos se identifican con la etiqueta LI.</p>
+            </article>
+        </section>
+        <section id="etiqueta5" style="display: none;">
+            <article>
+                <h2>* SPAN *</h2>
+                <p>Para estilos de una parte del texto</p>
+                <p>Con la etiqueta podemos personalizar el estilo de solamente una parte del texto.</p>
+            </article>
+        </section>
+
+</body>
+
+<script>
+    function mostrarinfo(id){
+        for(var i = 1; i <= 5; i++){
+            if(id == i){
+                document.getElementById("etiqueta"+id).style.display = "block";
+            }else{
+                document.getElementById("etiqueta"+i).style.display = "none";
+            }
+        }
+    }
+</script>
+</html>

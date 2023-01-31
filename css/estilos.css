@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: -webkit-linear-gradient(to right, #83e64100, #83e64100), url(../img/nada.png); 
+    background: linear-gradient(to right, #83e64100, #83e64100), url(../img/nada.png); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.text-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu-pos{
+    width: 25%;
+    height: 65px;
+    
+}
+
+.menu{
+    line-height: 50px;
+    padding: 0px 450px;
+    
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+.menu a{
+    display: block;
+    padding: 0px 100px;
+    text-decoration: none;
+    color: black;
+    transition: all 500ms ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu a:hover{
+    background: #6dd4c7;
+    color: #ffff;
+}
+
+.menu ul li a:hover + ul, .menu{
+    display: block;
+}
+
+.introduccion{
+    padding: 40px 0 10px 0;
+ }
+ 
+ .introduccion-cont{
+     display: flex;
+     justify-content: space-evenly;
+ }
+ 
+ .imagen-introduccion{
+     width: 20%;
+     height: 60%;
+ }
+ 
+ .contenido{
+     width: 35%;
+ }
+ 
+ .contenido p{
+     padding: 0px 0px 30px;
+     font-weight: 300;
+     text-align: justify;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ 
